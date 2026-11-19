@@ -59,4 +59,4 @@ Um projeto publicado mostra que sei entregar um produto completo, e não só esc
 
 O README é a primeira coisa que o recrutador lê porque é a "capa" do repositório: aparece logo abaixo da lista de arquivos. Como ele tem pouco tempo para olhar vários candidatos, é ali que decide se vale a pena continuar. Em poucos segundos ele vê o que o projeto faz, as tecnologias, os prints e o link do deploy. Um README bem feito passa profissionalismo e cuidado, enquanto a ausência dele faz o projeto parecer incompleto, mesmo que o código seja bom.
 
-**Autor:** SEU NOME AQUI
+**Autor:** João Vitor Gomes de Souza
