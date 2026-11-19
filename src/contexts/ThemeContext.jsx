@@ -1,6 +1,5 @@
-import { createContext, useState, useEffect } from 'react';
-
-export const ThemeContext = createContext();
+import { useState, useEffect } from 'react';
+import { ThemeContext } from './themeContextValue';
 
 export function ThemeProvider({ children }) {
   // lê a preferência salva no localStorage (se existir)
