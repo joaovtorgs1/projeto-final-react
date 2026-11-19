@@ -1,37 +1,62 @@
-# Projeto Final - Interfaces Dinâmicas e Reativas (Entrega Parcial)
+# Pokédex App - Projeto Final
 
-Pokédex feita com React, React Router, Tailwind CSS e a PokeAPI.
+Aplicação React de Pokédex feita para o projeto final de Interfaces Dinâmicas e Reativas.
 
-## Escopo do projeto
+🔗 **Deploy:** https://projeto-final-react-eta.vercel.app
 
-- [x] Estrutura de pastas definida
-- [x] Layout com Header, Footer e Outlet
-- [x] 3 páginas conectadas no menu (Home, Pokémons, Sobre)
-- [x] Serviço de API (services/api.js)
-- [x] Componentes base Button e Card com Tailwind
-- [x] Tema claro/escuro com Context API e localStorage
-- [ ] Busca de Pokémon
-- [ ] Página de detalhes
-- [ ] Deploy
+## Prints de tela
+
+**Desktop**
+
+![Versão desktop](desktop.png)
+
+**Mobile**
+
+![Versão mobile](mobile.png)
+
+## Tecnologias utilizadas
+
+- React
+- Vite
+- Tailwind CSS (com tema claro/escuro)
+- React Router
+- Context API
+- PokeAPI
+- Vercel (deploy)
+
+## Funcionalidades
+
+- Navegação entre páginas (Home, Pokémons, Sobre) sem recarregar
+- Listagem de Pokémons consumindo a PokeAPI, com estados de carregamento e erro
+- Tema claro/escuro salvo no localStorage
+- Layout responsivo
 
 ## Estrutura de pastas
 
     src/
-    ├── components/   componentes reutilizáveis (Button, Card, Header, Footer, Layout)
-    ├── pages/        páginas ligadas às rotas (Home, Pokemons, Sobre)
-    ├── services/     comunicação com a API (api.js)
-    ├── contexts/     Context API (ThemeContext)
-    └── hooks/        hooks personalizados (useTheme)
+    ├── components/   componentes reutilizáveis
+    ├── pages/        páginas ligadas às rotas
+    ├── services/     comunicação com a API
+    ├── contexts/     Context API (tema)
+    └── hooks/        hooks personalizados
 
-## Como rodar
+## Como rodar localmente
 
+    git clone https://github.com/joaovtorgs1/projeto-final-react.git
+    cd projeto-final-react
     npm install
     npm run dev
 
+Para gerar o build de produção:
+
+    npm run build
+
 ## Reflexão
 
-**Qual a importância de separar as páginas (pages) dos componentes reutilizáveis (components) e da lógica de API (services) em um projeto React que está crescendo?**
+**Qual o impacto de ter um projeto documentado e publicado no seu portfólio como desenvolvedor? Por que o README é a primeira coisa que um recrutador lê?**
 
-Separar cada responsabilidade em sua pasta deixa o código mais organizado e fácil de manter. As páginas (pages) representam telas inteiras ligadas a rotas e juntam vários componentes. Os componentes (components) são peças pequenas e reutilizáveis, como Button e Card, que não sabem nada sobre a tela onde estão, então podem ser usados em vários lugares sem repetir código. Já a lógica de API (services) concentra em um único arquivo a URL base, o fetch e o tratamento de erros HTTP.
+Um projeto publicado mostra que sei entregar um produto completo, e não só escrever código: ele passa por desenvolvimento, build e deploy e pode ser usado por qualquer pessoa com um link. A documentação mostra organização e comunicação, qualidades muito valorizadas no mercado, e permite que outros desenvolvedores entendam e rodem o projeto sem precisar me perguntar.
 
-Com isso, se a URL da API mudar ou se eu trocar o fetch por outra biblioteca, altero um arquivo só, sem mexer nas páginas. Os componentes também ficam mais fáceis de testar e entender, porque cada arquivo tem uma função clara. Em um projeto grande, misturar tudo no mesmo arquivo gera componentes enormes, código duplicado e dificuldade para achar e corrigir erros.
+O README é a primeira coisa que o recrutador lê porque é a "capa" do repositório: aparece logo abaixo da lista de arquivos. Como ele tem pouco tempo para olhar vários candidatos, é ali que decide se vale a pena continuar. Em poucos segundos ele vê o que o projeto faz, as tecnologias, os prints e o link do deploy. Um README bem feito passa profissionalismo e cuidado, enquanto a ausência dele faz o projeto parecer incompleto, mesmo que o código seja bom.
+
+**Autor:** SEU NOME AQUI
